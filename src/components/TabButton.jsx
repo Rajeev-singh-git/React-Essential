@@ -1,16 +1,11 @@
 export default function TabButton(Props) {
+  function handleClick() {
+    console.log("Hello world");
+  }
+
   return (
     <li>
-      <button>{Props.children}</button>
+      <button onClick={handleClick}>{Props.children}</button>
     </li>
   );
 }
-
-// using destructuring
-// export default function TabButton({children}) {
-//   return (
-//     <li>
-//       <button>{children}</button>
-//     </li>
-//   );
-// }
